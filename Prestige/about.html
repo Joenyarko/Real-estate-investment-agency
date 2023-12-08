@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+    .image-container1 {
+        position: relative; 
+        width:100%;
+        position: relative;
+    }
+    
+    /* Style for the image */
+    .image-container1 img {
+        width: 100%;
+        border-radius:5px;
+        height:100vh;
+       
+    }
+    .image-text1{
+        position: absolute;
+        top:30%;
+        padding: 15px 30px;
+        white-space: nowrap; /* Prevent text from wrapping */
+      animation: runHeader 5s linear infinite; 
+     
+    }
+    .image-text1 h2{
+        color: orange;
+        font-size: 45px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-align: center;
+        animation: bounce 2s infinite;
+    }
+    @media (max-width:600px){
+        .image-container1{
+            width:100%;
+            height:50vh;
+            z-index:1;
+        }
+        .image-container1 img{
+            height: 50vh;
+            width: 100%;
+            position: absolute;
+        }
+        .image-text1{
+            top:30%;
+        }
+        .image-text1 h2{
+            font-size:20px;
+            margin-left:8%;
+        }
+    }  
+    @keyframes runHeader {
+    from {
+        left: -100%; /* Start from outside the viewport */
+      }
+      to {
+        left: 100%; /* Run to the right */
+      }
+    }
+     .image-container1 img{
+      padding-left:0; /* Add padding to prevent content from being hidden behind the running header */
+    }
+      </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="lo-go">
+            <img src="image/logo.jpg" alt="Company Logo">
+        </div>
+        <div class="menu" id="menu">
+            <a class="ho-me" href="index.html">Home</a>
+            <a href="index.html#services-section" onclick="scrollToServices()">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq1.html">FAQ</a>
+        </div>
+            <div class="telephone">
+                <p><strong><i class="fa-solid fa-phone"></i></strong> (123) 456-7890</p>
+            </div>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            </div>
+
+
+            <div class="image-container1">
+                <img src="image/aboutunsplash.jpg" alt="">
+                <div class="image-text1">
+                <h2 style="text-align: center;">ABOUT US</h2>
+               
+                </div>
+            </div>
+
+
+   
+    <div>
+        <h2 style="text-align: center;">38 YEARS OF <br>EXPERIENCE IN LUXURY REAL ESTATE</h2>
+    </div>
+    <div class="arrow-list">
+        <ul class="about-list">
+            <li><span class="arrow">&rarr;</span><span>Proven Track Record:</span> We have successfully managed quite a number of properties,consistently
+                delivering impressive returns to our investors.</li>
+            <li><span class="arrow">&rarr;</span> <span>Experienced Team:</span> Our team comprises professionals with extensive experience in real estate, finance, and property management.</li>
+            <li><span class="arrow">&rarr;</span> <span>rime Location:</span> Our targeted location offers stability and growth potential, reducing investment risk.</li>
+        </ul>
+    </div>
+    <div class="about-container1">
+        <div class="about-card">
+            <img src="image/unsplash6.jpg" alt="Card Image"> <!-- Replace 'your-image.jpg' with the path to your image -->
+            <p class="aboutcard-summary">Summary of the text goes here.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="aboutcontent-item">
+                <h2>Understand the market</h2>
+                <p>Summary for Heading 1 goes here.</p>
+            </div>
+
+            <div class="aboutcontent-item">
+                <h2>Build People's Dreams</h2>
+                <p>Summary for Heading 2 goes here.</p>
+            </div>
+
+            <div class="aboutcontent-item">
+                <h2>Work Hard To Succeed</h2>
+                <p>Summary for Heading 3 goes here.</p>
+            </div>
+        </div>
+    </div>
+<h2 style="text-align: center;">Our Team</h2>
+    <div class="agents-container">
+        <!-- Agent 1 -->
+        <div class="agent-box">
+          <div class="agent-image">
+            <img src="image/agent1.jpg" alt="Agent 1">
+          </div>
+          <div class="agent-details">
+            <h3>Joe Joe</h3>
+            <p>Real Estate Expert</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="social-links"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/login?lang=en" class="social-links"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/login" class="social-links"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- Add more social media links as needed -->
+            </div>
+          </div>
+        </div>
+    
+        <!-- Agent 2 -->
+        <div class="agent-box">
+          <div class="agent-image">
+            <img src="image/agent2.jpg" alt="Agent 2">
+          </div>
+          <div class="agent-details">
+            <h3>Joe Nyarko</h3>
+            <p>Property Specialist</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="social-links"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/login?lang=en" class="social-links"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/login" class="social-links"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- Add more social media links as needed -->
+            </div>
+          </div>
+        </div>
+    
+        <!-- Agent 3 -->
+        <div class="agent-box">
+          <div class="agent-image">
+            <img src="image/agent3.jpg" alt="Agent 3">
+          </div>
+          <div class="agent-details">
+            <h3>Mr Nyarko</h3>
+            <p>Investment Advisor</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="social-links"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/login?lang=en" class="social-links"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/login" class="social-links"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- Add more social media links as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="footer-foot">
+        <div class="footer-contents">
+            <div class="footer-logo">
+                <img src="image/logo.jpg" class="footer-img" alt="Company Logo">
+                <p>This is the place to write something</p>
+            </div>
+            <div class="footer-left">
+                <h3>Contact Us <div class="underline"><span></span></div></h3>
+                <p><strong><i class="fa-solid fa-location-dot"></i></strong> 123 Main Street, City, ZIP Code</p>
+           <p><strong><i class="fa-solid fa-envelope"></i></strong> info@prestigereal-estate.com</p>
+            <p><strong><i class="fa-solid fa-phone"></i></strong> 0501354521</p>
+            
+            </div>
+            <div class="footer-right">
+                <h3>Support <div class="underline"><span></span></div></h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="index.html">Services</a></p>
+                <p><a href="about.html">AboutUs</a></p>
+                <p><a href="faq1.html">Faq</a></p>
+                <p><a href="contact.html">Contacts</a></p>
+            </div>
+          <div class="footer-last">
+            <h3>Newsletter <div class="underline"><span></span></div></h3>
+            <form class="form-form">
+                <input type="email" placeholder="Enter your email id" required>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="social-links"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/login?lang=en" class="social-links"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/login" class="social-links"><i class="fa-brands fa-linkedin-in"></i></a>
+                <!-- Add more social media links as needed -->
+            </div>
+          </div>
+        </div>
+        <hr style="width:90%; border: 0; border-bottom: 1px solid orange;margin: 20px auto;">
+        <p class="copyright">&copy; 2023 Prestige Real-estate - Developed by Joscode</p>
+    
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
